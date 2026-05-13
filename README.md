@@ -5,6 +5,7 @@ Conecta CEUB 2026
 
 **Profa. Kadidja Valéria de Oliveira**  
 **Aluna: Letícia Borsaro**
+
 **Curso: Ciência da Computação**
 
 **Conecta CEUB**: [https://institucional.uniceub.br/conecta2026](https://institucional.uniceub.br/conecta2026)
