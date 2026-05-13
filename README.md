@@ -4,6 +4,9 @@ Conecta CEUB 2026
 # Oficina "IHC Lab: Challenges & Desafios"
 
 **Profa. Kadidja Valéria de Oliveira**  
+**Aluna: Letícia Borsaro**
+**Curso: Ciência da Computação**
+
 **Conecta CEUB**: [https://institucional.uniceub.br/conecta2026](https://institucional.uniceub.br/conecta2026)
 
 # Projeto: Portal de Dados Abertos Inclusivo (IHC Lab 2026)
