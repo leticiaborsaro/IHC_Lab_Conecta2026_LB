@@ -31,6 +31,8 @@ A arquitetura da solução baseia-se em:
 *   **Justiça Social e Lente Cultural:** Design adaptado para refletir a pluralidade da sociedade brasileira, superando o "paradoxo da conformidade técnica" para garantir que a tecnologia seja uma ferramenta de emancipação.
 *   **Sustentabilidade Social via TICs:** Uso de tecnologias de informação para garantir que o acesso a direitos inalienáveis seja facilitado, promovendo a inclusão e a distribuição justa de informações públicas.
 
+**Vibe Coding com: Manus IA e Notebook LLM**
+
 ## 🔗 Links de Referência
 *   **Base Analítica:** [Portal de Dados Abertos](https://dados.gov.br)
 *   **Evento:** [Conecta CEUB 2026](https://institucional.uniceub.br/conecta2026)
