@@ -1,0 +1,456 @@
+/* Estilos Gerais */
+:root {
+    --govbr-blue-dark: #003366;
+    --govbr-blue-medium: #0056b3;
+    --govbr-blue-light: #007bff;
+    --govbr-green: #28a745;
+    --govbr-gray-dark: #333;
+    --govbr-gray-medium: #6c757d;
+    --govbr-gray-light: #f4f4f4;
+    --govbr-white: #ffffff;
+    --govbr-yellow: #ffc107;
+    --govbr-red: #dc3545;
+}
+
+body {
+    font-family: 'Rawline', 'Open Sans', Arial, sans-serif; /* Fontes padrão gov.br */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--govbr-gray-light);
+    color: var(--govbr-gray-dark);
+    font-size: 16px; /* Tamanho da fonte base para ajuste */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--govbr-blue-dark);
+    color: var(--govbr-white);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+/* Header */
+.header {
+    background-color: var(--govbr-blue-dark);
+    color: var(--govbr-white);
+    padding: 15px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.govbr-logo img {
+    height: 40px; /* Ajuste o tamanho conforme a identidade visual */
+    margin-right: 15px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+.accessibility-shortcuts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.accessibility-shortcuts button {
+    background-color: var(--govbr-blue-medium);
+    color: var(--govbr-white);
+    border: 1px solid var(--govbr-white);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    min-width: 120px; /* Áreas de toque grandes */
+    min-height: 44px; /* Áreas de toque grandes */
+}
+
+.accessibility-shortcuts button:hover,
+.accessibility-shortcuts button:focus {
+    background-color: var(--govbr-blue-light);
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--govbr-white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    text-decoration: underline;
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px 0;
+}
+
+.hero {
+    background-color: var(--govbr-white);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    color: var(--govbr-blue-dark);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.audio-description {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--govbr-green);
+    color: var(--govbr-white);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 150px; /* Áreas de toque grandes */
+    min-height: 44px; /* Áreas de toque grandes */
+}
+
+.button:hover,
+.button:focus {
+    background-color: #218838;
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+/* Data Filters Section */
+.data-filters {
+    background-color: var(--govbr-white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.data-filters h2 {
+    color: var(--govbr-blue-dark);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.data-filters form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--govbr-gray-dark);
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    min-height: 44px; /* Áreas de toque grandes */
+}
+
+.filter-group select:focus {
+    outline: 2px solid var(--govbr-blue-medium);
+    border-color: var(--govbr-blue-medium);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.data-transparency,
+.zero-friction {
+    background-color: var(--govbr-white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.data-transparency h2,
+.zero-friction h2 {
+    color: var(--govbr-blue-dark);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.transparency-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--govbr-gray-light);
+}
+
+.card h3 {
+    color: var(--govbr-blue-light);
+    margin-top: 0;
+}
+
+.button-small {
+    display: inline-block;
+    background-color: var(--govbr-blue-medium);
+    color: var(--govbr-white);
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    min-width: 100px; /* Áreas de toque grandes */
+    min-height: 38px; /* Áreas de toque grandes */
+}
+
+.button-small:hover,
+.button-small:focus {
+    background-color: var(--govbr-blue-dark);
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+.notification-card {
+    background-color: var(--govbr-yellow);
+    border-left: 5px solid var(--govbr-blue-dark);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: var(--govbr-gray-dark);
+}
+
+.notification-card h3 {
+    color: var(--govbr-blue-dark);
+    margin-top: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--govbr-blue-dark);
+    color: var(--govbr-white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: var(--govbr-white);
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus {
+    text-decoration: underline;
+    outline: 2px solid var(--govbr-yellow); /* Foco visível */
+}
+
+/* Estilos para Alto Contraste */
+body.high-contrast {
+    background-color: black;
+    color: yellow;
+}
+
+body.high-contrast .header,
+body.high-contrast .footer {
+    background-color: black;
+    color: white;
+}
+
+body.high-contrast .site-title,
+body.high-contrast .hero h2,
+body.high-contrast .data-transparency h2,
+body.high-contrast .zero-friction h2,
+body.high-contrast .card h3,
+body.high-contrast .notification-card h3 {
+    color: white;
+}
+
+body.high-contrast .accessibility-shortcuts button,
+body.high-contrast .button,
+body.high-contrast .button-small {
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+}
+
+body.high-contrast .accessibility-shortcuts button:hover,
+body.high-contrast .accessibility-shortcuts button:focus,
+body.high-contrast .button:hover,
+body.high-contrast .button:focus,
+body.high-contrast .button-small:hover,
+body.high-contrast .button-small:focus {
+    background-color: white;
+    color: black;
+    outline: 2px solid yellow;
+}
+
+body.high-contrast .main-nav a,
+body.high-contrast .footer a {
+    color: yellow;
+}
+
+body.high-contrast .hero,
+body.high-contrast .data-transparency,
+body.high-contrast .zero-friction,
+body.high-contrast .card,
+body.high-contrast .data-filters {
+    background-color: #333;
+    color: yellow;
+    border-color: yellow;
+}
+
+body.high-contrast .notification-card {
+    background-color: #333;
+    border-left-color: yellow;
+    color: yellow;
+}
+
+body.high-contrast .filter-group label,
+body.high-contrast .filter-group select {
+    color: yellow;
+    background-color: #333;
+    border-color: yellow;
+}
+
+body.high-contrast .filter-group select:focus {
+    outline: 2px solid yellow;
+    border-color: yellow;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accessibility-shortcuts ul,
+    .main-nav ul {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .site-title {
+        margin-bottom: 15px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .data-transparency,
+    .zero-friction,
+    .data-filters {
+        padding: 20px;
+    }
+
+    .transparency-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .data-filters form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        min-width: unset;
+        width: 100%;
+    }
+}

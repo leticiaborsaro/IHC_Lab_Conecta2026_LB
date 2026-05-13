@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Dados Abertos Inclusivo - Gov.br</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-top">
+                <div class="govbr-logo">
+                    <img src="https://www.gov.br/++theme++padrao_govbr/img/govbr-logo-2.png" alt="Logo Gov.br - Governo Federal do Brasil">
+                </div>
+                <h1 class="site-title">Portal de Dados Abertos</h1>
+                <nav aria-label="Atalhos de Acessibilidade" class="accessibility-shortcuts">
+                    <ul>
+                        <li><button id="toggle-contrast" aria-label="Alternar para modo de alto contraste">Alto Contraste</button></li>
+                        <li><button id="toggle-libras" aria-label="Ativar ou desativar janela de Libras">Libras</button></li>
+                        <li><button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button></li>
+                        <li><button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav aria-label="Navegação Principal" class="main-nav">
+                <ul>
+                    <li><a href="#" aria-current="page">Início</a></li>
+                    <li><a href="#dados">Dados</a></li>
+                    <li><a href="#transparencia">Transparência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+        <div class="container">
+            <section class="hero" aria-labelledby="hero-title">
+                <h2 id="hero-title">Acesso Facilitado a Dados para um Brasil Melhor</h2>
+                <p>Explore informações governamentais de forma simples e transparente, promovendo a cidadania e a sustentabilidade social.</p>
+                <p class="audio-description" aria-hidden="true">Descrição visual: Imagem ilustrativa de pessoas diversas interagindo com gráficos e dados em telas digitais, simbolizando inclusão e acesso à informação.</p>
+                <a href="#dados" class="button">Explorar Dados</a>
+            </section>
+
+            <section class="data-filters" aria-labelledby="filters-title">
+                <h2 id="filters-title">Encontre os Dados que Você Precisa</h2>
+                <form aria-label="Filtros de Dados Abertos">
+                    <fieldset>
+                        <legend class="sr-only">Opções de Filtro</legend>
+                        <div class="filter-group">
+                            <label for="filter-orgao">Órgão Público:</label>
+                            <select id="filter-orgao" name="orgao">
+                                <option value="">Todos os Órgãos</option>
+                                <option value="saude">Ministério da Saúde</option>
+                                <option value="educacao">Ministério da Educação</option>
+                                <option value="meio-ambiente">Ministério do Meio Ambiente</option>
+                                <option value="economia">Ministério da Economia</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filter-tema">Tema:</label>
+                            <select id="filter-tema" name="tema">
+                                <option value="">Todos os Temas</option>
+                                <option value="saude-publica">Saúde Pública</option>
+                                <option value="ensino">Ensino</option>
+                                <option value="sustentabilidade">Sustentabilidade</option>
+                                <option value="financas">Finanças Públicas</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filter-eixo">Eixo GranDIHC-BR:</label>
+                            <select id="filter-eixo" name="eixo">
+                                <option value="">Todos os Eixos</option>
+                                <option value="etica">Ética e Responsabilidade</option>
+                                <option value="pluralidade">Pluralidade e Decolonialidade</option>
+                                <option value="socio-cultural">Aspectos Socioculturais</option>
+                                <option value="humano-dados">Interação Humano-Dados</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button">Aplicar Filtros</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="transparencia" class="data-transparency" aria-labelledby="transparency-title">
+                <h2 id="transparency-title">Painel de Transparência de Dados</h2>
+                <p>Entenda como os dados abertos do governo são utilizados para impulsionar o desenvolvimento sustentável e a justiça social no Brasil.</p>
+                <p class="audio-description" aria-hidden="true">Descrição visual: Três cartões informativos dispostos lado a lado, cada um com um ícone representativo e um título, como 'Educação', 'Saúde' e 'Meio Ambiente'.</p>
+                <div class="transparency-cards">
+                    <article class="card" aria-labelledby="card-education-title">
+                        <h3 id="card-education-title">Educação</h3>
+                        <p>Dados sobre o desempenho escolar e investimentos em educação para sua região.</p>
+                        <a href="#" class="button-small" aria-label="Ver dados de Educação">Ver dados</a>
+                    </article>
+                    <article class="card" aria-labelledby="card-health-title">
+                        <h3 id="card-health-title">Saúde</h3>
+                        <p>Informações sobre acesso a serviços de saúde e indicadores de bem-estar.</p>
+                        <a href="#" class="button-small" aria-label="Ver dados de Saúde">Ver dados</a>
+                    </article>
+                    <article class="card" aria-labelledby="card-environment-title">
+                        <h3 id="card-environment-title">Meio Ambiente</h3>
+                        <p>Acompanhe dados sobre preservação ambiental e sustentabilidade.</p>
+                        <a href="#" class="button-small" aria-label="Ver dados de Meio Ambiente">Ver dados</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="zero-friction" aria-labelledby="friction-title">
+                <h2 id="friction-title">Indicador de "Zero Fricção"</h2>
+                <p>Nosso portal foi desenvolvido para ser totalmente funcional sem a necessidade de JavaScript, garantindo acesso universal e rápido a todos os cidadãos.</p>
+                <p>Navegue, pesquise e baixe dados com a certeza de que a tecnologia não será uma barreira.</p>
+                <p class="audio-description" aria-hidden="true">Descrição visual: Um ícone de engrenagem com um sinal de proibido sobre ele, simbolizando a ausência de barreiras tecnológicas.</p>
+            </section>
+
+            <aside class="notification-card" role="complementary" aria-labelledby="notification-title">
+                <h3 id="notification-title">Comunicação Proativa: Notificação Importante</h3>
+                <p><strong>Existem novos dados sobre educação na sua região.</strong> Clique para saber mais sobre os benefícios e direitos civis relacionados.</p>
+                <a href="#" class="button-small" aria-label="Ver detalhes sobre novos dados de educação">Ver Detalhes</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 Portal de Dados Abertos Inclusivo. Todos os direitos reservados.</p>
+            <nav aria-label="Links do Rodapé">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Mapa do Site</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Placeholder para funcionalidades de acessibilidade (JavaScript opcional)
+        document.getElementById("toggle-contrast").addEventListener("click", function() {
+            document.body.classList.toggle("high-contrast");
+            this.setAttribute("aria-pressed", document.body.classList.contains("high-contrast"));
+        });
+
+        let fontSize = 16; // Tamanho da fonte base
+        document.getElementById("increase-font").addEventListener("click", function() {
+            fontSize += 2;
+            document.body.style.fontSize = fontSize + "px";
+        });
+
+        document.getElementById("decrease-font").addEventListener("click", function() {
+            fontSize -= 2;
+            document.body.style.fontSize = fontSize + "px";
+        });
+
+        // A funcionalidade de Libras geralmente requer um widget externo ou integração mais complexa.
+        // Para este wireframe, é um placeholder visual.
+        document.getElementById("toggle-libras").addEventListener("click", function() {
+            alert("Funcionalidade de Libras ativada/desativada (placeholder).");
+            this.setAttribute("aria-pressed", this.getAttribute("aria-pressed") === "true" ? "false" : "true");
+        });
+    </script>
+</body>
+</html>
